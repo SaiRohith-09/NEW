@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Portfolio | Editkaro.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><span>Edit</span>karo.in</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>Our Video Portfolio</h1>
+            <p>Showcasing our best video editing work across different categories</p>
+        </div>
+    </section>
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="short-form">Short Form</button>
+                <button class="filter-btn" data-filter="long-form">Long Form</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+                <button class="filter-btn" data-filter="football">Football Edits</button>
+                <button class="filter-btn" data-filter="ecommerce">eCommerce Ads</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
+                <button class="filter-btn" data-filter="color-grading">Color Grading</button>
+                <button class="filter-btn" data-filter="anime">Anime</button>
+                <button class="filter-btn" data-filter="ads">Commercial Ads</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="portfolio-item" data-category="ecommerce">
+                    <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="video-link">
+                        <div class="portfolio-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                                 alt="Product Advertisement" 
+                                 class="video-thumbnail">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- You can add a caption or title here if needed -->
+                    <div class="portfolio-caption">
+                        <h3>Product Advertisement</h3>
+                        <p>eCommerce product showcase</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="portfolio-info">
+                        <h3>Product Advertisement</h3>
+                        <span class="category">eCommerce Ads</span>
+                        <p>eCommerce product showcase designed to drive conversions.</p>
+                        <button class="view-btn" 
+                                data-video-id="dQw4w9WgXcQ" 
+                                data-title="Product Advertisement" 
+                                data-description="eCommerce product showcase designed to drive conversions">
+                            Watch Video
+                        </button>
+                    </div>
+                </div>
+                
+
+                <div class="portfolio-item" data-category="short-form">
+                    <div class="portfolio-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
+                             alt="Instagram Reel" 
+                             class="video-thumbnail">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Instagram Reel</h3>
+                        <span class="category">Short Form</span>
+                        <p>Engaging short-form content with dynamic transitions.</p>
+                        <button class="view-btn" 
+                                data-video-id="dQw4w9WgXcQ" 
+                                data-title="Instagram Reel" 
+                                data-description="Engaging short-form content with dynamic transitions">
+                            Watch Video
+                        </button>
+                    </div>
+                </div>
+
+                    <div class="portfolio-item" data-category="gaming">
+                    <div class="portfolio-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Gaming Montage" 
+                             class="video-thumbnail">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-lightbox">
+                            <div class="lightbox-content">
+                                <span class="close-btn">&times;</span>
+                                <div class="video-container">
+                                    <iframe id="lightbox-video" src="" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <h3 id="video-title"></h3>
+                                    <p id="video-description"></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Gaming Montage</h3>
+                        <span class="category">Gaming</span>
+                        <p>High-energy gaming highlights with sync edits.</p>
+                        <button class="view-btn" 
+                                data-video-id="dQw4w9WgXcQ" 
+                                data-title="Gaming Montage" 
+                                data-description="High-energy gaming highlights with sync edits">
+                            Watch Video
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3><span>Edit</span>karo.in</h3>
+                    <p>Professional video editing services for creators, brands, and businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> contact@editkaro.in</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Editkaro.in. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

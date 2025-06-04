@@ -1,0 +1,50 @@
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .hero-section {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+
+  .video-card {
+    transition: transform 0.3s ease-in-out;
+  }
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  .video-card:hover img {
+    filter: brightness(70%);
+  }
+  
+
+  .hero-bg {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+
+  .section-title {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s, transform 0.8s;
+  }
+  
+
+  .cursor {
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease-in-out;
+  }
+  
